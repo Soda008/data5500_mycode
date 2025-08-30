@@ -1,0 +1,16 @@
+2025-08-30 04:47:53.612 [info] 
+
+
+
+
+2025-08-30 04:47:53.627 [info] Extension host agent started.
+2025-08-30 04:47:53.653 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.local/share/code-server/extensions
+2025-08-30 04:47:53.663 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.local/share/code-server/extensions
+2025-08-30 04:47:59.287 [info] [<unknown>][a85654a0][ManagementConnection] New connection established.
+2025-08-30 04:48:01.476 [info] [<unknown>][3389d131][ExtensionHostConnection] New connection established.
+2025-08-30 04:48:01.806 [error] Error: Unexpected SIGPIPE
+    at process.<anonymous> (file:///var/app/code-server/lib/vscode/out/server-main.js:188:1327)
+    at process.emit (node:events:530:35)
+2025-08-30 04:48:01.850 [info] [<unknown>][3389d131][ExtensionHostConnection] <7875> Launched Extension Host Process.
+2025-08-30 04:59:21.813 [info] [<unknown>][3389d131][ExtensionHostConnection] The client has reconnected.
+2025-08-30 04:59:22.080 [info] [<unknown>][a85654a0][ManagementConnection] The client has reconnected.

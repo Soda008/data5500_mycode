@@ -1,0 +1,174 @@
+2025-08-30 04:48:13.464 [info] [main] Log level: Info
+2025-08-30 04:48:13.464 [info] [main] Validating found git in: "git"
+2025-08-30 04:48:13.464 [info] [main] Using git "2.43.0" from "git"
+2025-08-30 04:48:13.464 [info] [Model][doInitialScan] Initial repository scan started
+2025-08-30 04:48:13.466 [info] > git rev-parse --show-toplevel [12ms]
+2025-08-30 04:48:13.466 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:48:13.471 [info] > git rev-parse --show-toplevel [1ms]
+2025-08-30 04:48:13.471 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:48:13.478 [info] > git rev-parse --show-toplevel [4ms]
+2025-08-30 04:48:13.478 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:48:13.482 [info] > git rev-parse --show-toplevel [1ms]
+2025-08-30 04:48:13.482 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:48:13.486 [info] > git rev-parse --show-toplevel [1ms]
+2025-08-30 04:48:13.486 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:48:13.493 [info] > git rev-parse --show-toplevel [5ms]
+2025-08-30 04:48:13.518 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [21ms]
+2025-08-30 04:48:13.534 [info] [Model][openRepository] Opened repository (path): /home/ubuntu/ec2_scripts
+2025-08-30 04:48:13.534 [info] [Model][openRepository] Opened repository (real path): /home/ubuntu/ec2_scripts
+2025-08-30 04:48:13.534 [info] [Model][openRepository] Opened repository (kind): repository
+2025-08-30 04:48:13.539 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-08-30 04:48:13.549 [info] > git config --get commit.template [6ms]
+2025-08-30 04:48:13.557 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2025-08-30 04:48:13.561 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ubuntu/ec2_scripts/.git/refs/remotes/origin/main'
+2025-08-30 04:48:13.562 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-08-30 04:48:13.571 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-08-30 04:48:13.573 [info] > git status -z -uall [8ms]
+2025-08-30 04:48:13.627 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [10ms]
+2025-08-30 04:48:13.635 [info] > git config --get --local branch.main.vscode-merge-base [4ms]
+2025-08-30 04:48:13.635 [warning] [Git][config] git config failed: Failed to execute git
+2025-08-30 04:48:13.639 [info] > git config --get commit.template [15ms]
+2025-08-30 04:48:13.670 [info] > git reflog main --grep-reflog=branch: Created from *. [32ms]
+2025-08-30 04:48:13.674 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-08-30 04:48:13.678 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ubuntu/ec2_scripts/.git/refs/remotes/origin/main'
+2025-08-30 04:48:13.680 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [6ms]
+2025-08-30 04:48:13.684 [info] > git rev-parse refs/remotes/origin/main [6ms]
+2025-08-30 04:48:13.691 [info] > git status -z -uall [5ms]
+2025-08-30 04:48:13.692 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/main refs/remotes/origin/main [9ms]
+2025-08-30 04:48:13.700 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [10ms]
+2025-08-30 04:48:13.702 [info] > git config --add --local branch.main.vscode-merge-base origin/main [8ms]
+2025-08-30 04:48:13.709 [info] > git config --get commit.template [3ms]
+2025-08-30 04:48:13.758 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [46ms]
+2025-08-30 04:48:13.780 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ubuntu/ec2_scripts/.git/refs/remotes/origin/main'
+2025-08-30 04:48:13.791 [info] > git rev-parse refs/remotes/origin/main [11ms]
+2025-08-30 04:48:13.815 [info] > git status -z -uall [19ms]
+2025-08-30 04:48:13.818 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [15ms]
+2025-08-30 04:48:13.828 [info] > git merge-base refs/heads/main refs/remotes/origin/main [3ms]
+2025-08-30 04:48:13.833 [info] > git merge-base refs/heads/main refs/remotes/origin/main [5ms]
+2025-08-30 04:48:13.837 [info] > git diff --name-status -z --diff-filter=ADMR c49cb96cb9f7431e0b1fa5a448d5910c87463425...refs/remotes/origin/main [5ms]
+2025-08-30 04:48:13.852 [info] > git diff --name-status -z --diff-filter=ADMR c49cb96cb9f7431e0b1fa5a448d5910c87463425...refs/remotes/origin/main [16ms]
+2025-08-30 04:48:14.184 [info] > git check-ignore -v -z --stdin [2ms]
+2025-08-30 04:48:40.235 [info] > git config --get commit.template [4ms]
+2025-08-30 04:48:40.236 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 04:48:40.238 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/ubuntu/ec2_scripts/.git/refs/remotes/origin/main'
+2025-08-30 04:48:40.240 [info] > git rev-parse refs/remotes/origin/main [2ms]
+2025-08-30 04:48:40.246 [info] > git status -z -uall [4ms]
+2025-08-30 04:48:40.247 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-08-30 04:48:43.312 [info] > git rev-parse --show-toplevel [1ms]
+2025-08-30 04:48:43.312 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:49:11.659 [info] > git rev-parse --show-toplevel [3ms]
+2025-08-30 04:49:11.659 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:49:13.036 [info] > git rev-parse --show-toplevel [1ms]
+2025-08-30 04:49:13.036 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-08-30 04:53:13.914 [info] > git rev-parse --show-toplevel [2ms]
+2025-08-30 04:53:13.919 [info] > git rev-parse --git-dir --git-common-dir --show-superproject-working-tree [2ms]
+2025-08-30 04:53:13.929 [info] [Model][openRepository] Opened repository (path): /home/ubuntu
+2025-08-30 04:53:13.929 [info] [Model][openRepository] Opened repository (real path): /home/ubuntu
+2025-08-30 04:53:13.929 [info] [Model][openRepository] Opened repository (kind): repository
+2025-08-30 04:53:13.938 [info] > git config --get commit.template [5ms]
+2025-08-30 04:53:13.939 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 04:53:13.947 [info] > git status -z -uall [4ms]
+2025-08-30 04:53:13.948 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-08-30 04:53:13.961 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [5ms]
+2025-08-30 04:53:13.965 [info] > git config --get commit.template [5ms]
+2025-08-30 04:53:13.965 [info] > git config --get --local branch.main.vscode-merge-base [1ms]
+2025-08-30 04:53:13.965 [warning] [Git][config] git config failed: Failed to execute git
+2025-08-30 04:53:13.971 [info] > git reflog main --grep-reflog=branch: Created from *. [3ms]
+2025-08-30 04:53:13.975 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-08-30 04:53:13.984 [info] > git status -z -uall [6ms]
+2025-08-30 04:53:13.984 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [10ms]
+2025-08-30 04:53:13.984 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-08-30 04:53:13.984 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-08-30 04:53:13.986 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-08-30 04:53:14.589 [info] > git check-ignore -v -z --stdin [4ms]
+2025-08-30 04:53:14.590 [info] > git check-ignore -v -z --stdin [2ms]
+2025-08-30 04:53:51.933 [info] > git config --get commit.template [4ms]
+2025-08-30 04:53:51.933 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-08-30 04:53:51.941 [info] > git status -z -uall [3ms]
+2025-08-30 04:53:51.941 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-08-30 04:53:51.951 [info] > git merge-base refs/heads/main refs/remotes/origin/main [1ms]
+2025-08-30 04:53:51.956 [info] > git diff --name-status -z --diff-filter=ADMR ebe82101d9d89abd9d0d495b4fa92473d9296508...refs/remotes/origin/main [2ms]
+2025-08-30 05:02:55.016 [info] > git config --get commit.template [5ms]
+2025-08-30 05:02:55.017 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-08-30 05:02:55.025 [info] > git status -z -uall [4ms]
+2025-08-30 05:02:55.026 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-08-30 05:07:44.168 [info] > git check-ignore -v -z --stdin [2ms]
+2025-08-30 05:07:46.753 [info] > git config --get commit.template [5ms]
+2025-08-30 05:07:46.754 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 05:07:46.765 [info] > git status -z -uall [6ms]
+2025-08-30 05:07:46.766 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-08-30 05:07:59.796 [info] > git check-ignore -v -z --stdin [2ms]
+2025-08-30 05:08:00.300 [info] > git config --get commit.template [5ms]
+2025-08-30 05:08:00.301 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 05:08:00.309 [info] > git status -z -uall [5ms]
+2025-08-30 05:08:00.310 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-08-30 05:08:06.522 [info] > git show --textconv :data5500_fall2025/hello/hello.py [53ms]
+2025-08-30 05:08:06.522 [info] > git check-ignore -v -z --stdin [9ms]
+2025-08-30 05:08:06.529 [info] > git ls-files --stage -- data5500_fall2025/hello/hello.py [38ms]
+2025-08-30 05:08:06.592 [info] > git hash-object -t tree /dev/null [29ms]
+2025-08-30 05:08:06.592 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:08:06.599 [info] > git hash-object -t tree /dev/null [9ms]
+2025-08-30 05:08:06.599 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:08:07.002 [info] > git config --get commit.template [4ms]
+2025-08-30 05:08:07.003 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 05:08:07.010 [info] > git status -z -uall [3ms]
+2025-08-30 05:08:07.012 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-08-30 05:08:07.970 [info] > git blame --root --incremental ebe82101d9d89abd9d0d495b4fa92473d9296508 -- data5500_fall2025/hello/hello.py [2ms]
+2025-08-30 05:08:07.970 [info] fatal: no such path data5500_fall2025/hello/hello.py in ebe82101d9d89abd9d0d495b4fa92473d9296508
+2025-08-30 05:08:14.196 [info] > git config --get commit.template [5ms]
+2025-08-30 05:08:14.197 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 05:08:14.206 [info] > git status -z -uall [5ms]
+2025-08-30 05:08:14.208 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-08-30 05:09:46.813 [info] > git config --get commit.template [8ms]
+2025-08-30 05:09:46.813 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-08-30 05:09:46.822 [info] > git status -z -uall [5ms]
+2025-08-30 05:09:46.825 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-08-30 05:09:51.837 [info] > git config --get commit.template [4ms]
+2025-08-30 05:09:51.838 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-08-30 05:09:51.845 [info] > git status -z -uall [4ms]
+2025-08-30 05:09:51.845 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-08-30 05:09:56.856 [info] > git config --get commit.template [4ms]
+2025-08-30 05:09:56.857 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 05:09:56.863 [info] > git status -z -uall [3ms]
+2025-08-30 05:09:56.864 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-08-30 05:10:04.438 [info] > git config --get commit.template [3ms]
+2025-08-30 05:10:04.444 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 05:10:04.453 [info] > git status -z -uall [5ms]
+2025-08-30 05:10:04.455 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-08-30 05:10:14.731 [info] > git check-ignore -v -z --stdin [1ms]
+2025-08-30 05:10:16.529 [info] > git show --textconv :data5500_fall2025/week1_setupAWS/week1_linux.txt [5ms]
+2025-08-30 05:10:16.529 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ubuntu/data5500_fall2025/week1_setupAWS/week1_linux.txt.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fweek1_setupAWS%2Fweek1_linux.txt%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:10:16.530 [info] > git ls-files --stage -- data5500_fall2025/week1_setupAWS/week1_linux.txt [2ms]
+2025-08-30 05:10:16.530 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ubuntu/data5500_fall2025/week1_setupAWS/week1_linux.txt.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fweek1_setupAWS%2Fweek1_linux.txt%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:10:17.496 [info] > git show --textconv :data5500_fall2025/hello/hello.py [5ms]
+2025-08-30 05:10:17.496 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:10:17.497 [info] > git ls-files --stage -- data5500_fall2025/hello/hello.py [2ms]
+2025-08-30 05:10:17.497 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:14:31.361 [info] > git show --textconv :data5500_fall2025/week1_setupAWS/week1_linux.txt [5ms]
+2025-08-30 05:14:31.362 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ubuntu/data5500_fall2025/week1_setupAWS/week1_linux.txt.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fweek1_setupAWS%2Fweek1_linux.txt%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:14:31.362 [info] > git ls-files --stage -- data5500_fall2025/week1_setupAWS/week1_linux.txt [2ms]
+2025-08-30 05:14:31.362 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ubuntu/data5500_fall2025/week1_setupAWS/week1_linux.txt.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fweek1_setupAWS%2Fweek1_linux.txt%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:14:31.971 [info] > git show --textconv :data5500_fall2025/hello/hello.py [5ms]
+2025-08-30 05:14:31.972 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:14:31.972 [info] > git ls-files --stage -- data5500_fall2025/hello/hello.py [2ms]
+2025-08-30 05:14:31.972 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:14:34.078 [info] > git show --textconv :data5500_fall2025/hello/hello.py [4ms]
+2025-08-30 05:14:34.078 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:14:34.079 [info] > git ls-files --stage -- data5500_fall2025/hello/hello.py [2ms]
+2025-08-30 05:14:34.079 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:16:32.960 [info] > git show --textconv :data5500_fall2025/hello/hello.py [4ms]
+2025-08-30 05:16:32.961 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:16:32.961 [info] > git ls-files --stage -- data5500_fall2025/hello/hello.py [1ms]
+2025-08-30 05:16:32.962 [warning] [GitFileSystemProvider][stat] File not found - git:/home/ubuntu/data5500_fall2025/hello/hello.py.git?%7B%22path%22%3A%22%2Fhome%2Fubuntu%2Fdata5500_fall2025%2Fhello%2Fhello.py%22%2C%22ref%22%3A%22%22%7D
+2025-08-30 05:22:55.329 [info] > git config --get commit.template [1ms]
+2025-08-30 05:22:55.334 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-08-30 05:22:55.341 [info] > git status -z -uall [3ms]
+2025-08-30 05:22:55.342 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-08-30 05:23:02.427 [info] > git config --get commit.template [5ms]
+2025-08-30 05:23:02.428 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-08-30 05:23:02.437 [info] > git status -z -uall [4ms]
+2025-08-30 05:23:02.438 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-08-30 05:23:37.597 [info] > git config --get commit.template [1ms]
+2025-08-30 05:23:37.602 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-08-30 05:23:37.610 [info] > git status -z -uall [4ms]
+2025-08-30 05:23:37.611 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]

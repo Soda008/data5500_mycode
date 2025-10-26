@@ -1,21 +1,34 @@
 # File: hard.py
 
-"""
-Essay: Deleting a Node from a Binary Search Tree
-
-Deleting a node involves three cases:
-1) Leaf node: remove it (set parent's pointer to None).
-2) One child: replace node with its single child.
-3) Two children: replace node's value with in-order successor (min in right subtree)
-   then delete that successor node.
-
-Edge cases:
-- Deleting the root needs returning the new root.
-- Unbalanced trees degrade to O(n).
-- Handling duplicates depends on convention (this code places equals to the right).
-
-Time Complexity: O(h) where h is tree height (O(log n) average, O(n) worst-case).
-"""
+# Essay:
+# Deleting a Node from a Binary Search Tree in Python
+# Deleting a node from a BST means removing the node while keeping the tree’s left < parent < right ordering.
+# Deletion
+#   - Leaf node
+#       - Action: Remove it by setting the parent’s pointer to None.
+#       - Why: No children to reconnect, so removal is straightforward.
+#   - Node with one child
+#       - Action: Replace the node with its single child by updating the parent’s pointer to point to that child.
+#       - Why: The subtree rooted at the child preserves the BST ordering when spliced in place of the deleted node.
+#   - Node with two children
+#       - Action: Find the node’s in-order successor (the smallest node in its right subtree),
+#           copy the successor’s value into the node to delete, then delete the successor node from the right subtree.
+#       - Why: The successor is the next larger value, so copying it preserves ordering;
+#           the successor will have at most one child, reducing the problem to a simpler case.
+# Edge Cases and Special Circumstances
+#   - Deleting the root
+#       - You must return the new root after deletion because the root variable may change when the root is removed or replaced.
+#   - Duplicates
+#       - Decide a convention up front (e.g., place equal values on the right).
+#           Follow that convention consistently in insert/search/delete so duplicate handling is predictable.
+#   - Unbalanced trees
+#       - Repeated insertions/deletions can make the tree skewed, turning O(log n) operations into O(n).
+#           For predictable performance, use a self-balancing tree (AVL/Red‑Black) or rebalance periodically.
+#   - Missing value or empty tree
+#       - If the value isn’t found or the tree is empty, simply return the original root; do not raise errors.
+#   - Parent pointer management and references
+#       - If using recursion, return the updated subtree root from each call so parent links are correct;
+#           if using iteration, carefully update parent child pointers.
 
 class Node:
     def __init__(self, value):

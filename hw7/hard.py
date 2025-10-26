@@ -1,4 +1,3 @@
-# Prompt to ChatGPT: "Provide BST insert, delete_node, pretty printer, demo of deletions, and essay docstring."
 # File: hard.py
 
 """

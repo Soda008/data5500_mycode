@@ -1,4 +1,3 @@
-# Prompt to ChatGPT: "Produce an improved, cleaner ASCII visualization of a binary search tree for terminal output. Include insert(), print_tree_pretty(), demo, and Big O notes."
 # File: easy.py
 
 class Node:

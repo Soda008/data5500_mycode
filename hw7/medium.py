@@ -1,4 +1,3 @@
-# Prompt to ChatGPT: "Provide BST insert, search, and improved pretty printer; include demo searches and Big O notes."
 # File: medium.py
 
 class Node:
